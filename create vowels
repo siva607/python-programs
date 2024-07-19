@@ -1,0 +1,12 @@
+def check(string):  
+    string = string.replace(' ', " ")  
+    string = string.lower()  
+    vowel_1 = [string.count('a'), string.count('e'), string.count(  
+        'i'), string.count('o'), string.count('u')]  
+    if vowel_1.count(0) > 0:  
+        return('The string is Not Accepted')  
+    else:  
+        return('The string is Accepted')    
+if __name__ == "__main__":  
+    string = str (input ("Enter the String of characters: "))  
+    print (check(string))  
